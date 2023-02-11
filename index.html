@@ -1,0 +1,35 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="styles.css">
+     
+  <title>
+    Imersão Dev
+  </title>
+</head>
+
+<body>
+  <h1>Classificação do Brasileirão</h1>
+
+  <input type="text" id="nomeJogador" placeholder="Digite o nome do jogador" />
+  <button onClick="createPlayer()">Adicionar novo jogador</button>
+
+  <table style="width:100%">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Vitórias</th>
+        <th>Empates</th>
+        <th>Derrotas</th>
+        <th>Pontos</th>
+        <th colspan="5">Ações</th>
+      </tr>
+    </thead>
+    <tbody id="tabelaJogadores">
+    </tbody>
+  </table>
+  <button id="buttonDeleteAll" onClick="deleteAllPlayers()">Apagar todos jogadores</button>
+</body>
+<script src="setup.js"></script>
+
+</html>
